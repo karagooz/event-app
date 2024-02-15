@@ -9,7 +9,7 @@ import Footer from '../component/Footer'
 function Views() {
 
   const { isLogin } = useContext(AuthContext)
-
+  //routes map
 
   return (<>
     <Header />
