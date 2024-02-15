@@ -7,6 +7,8 @@ import About from '../views/public/AboutContactPages/About'
 import Contact from '../views/public/AboutContactPages/Contact'
 
 export const publicRoutes = [
+    //routes
+    
     {
         path:'/*',
         element: <HomePage />
