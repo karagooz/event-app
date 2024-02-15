@@ -1,0 +1,203 @@
+{
+    "eventList": [
+      {
+        "id": 1,
+        "name": "Cem Adrian Konseri",
+        "category": "konser",
+        "description": "Cem Adrian'ın eşsiz sesi ve müziğiyle dolu bir konser. Unutulmaz anlar yaşamak için bu konseri kaçırmayın!",
+        "date": "22-01-2024 20:00",
+        "image": "https://i.pinimg.com/564x/70/34/7f/70347fec5b9ecebea94b9d58e55f68b6.jpg",
+        "link": "https://www.google.com",
+        "location": "Paris, Olympia Concert Hall, Fransa",
+        "stars": 3
+      },
+      {
+        "id": 2,
+        "name": "Manuş Baba Konseri",
+        "category": "konser",
+        "description": "Manuş Baba'nın dokunaklı şarkılarıyla dolu bir konser gecesi. Kendine has tarzıyla dinleyicilere unutulmaz anlar yaşatacak.",
+        "date": "24-01-2024 21:00",
+        "image": "https://i.pinimg.com/564x/8e/9b/29/8e9b29f70d286a29a6ada012e9002c97.jpg",
+        "link": "https://www.google.com",
+        "location": "Paris, Le Bataclan, Fransa",
+        "stars": 3
+      },
+      {
+        "id": 3,
+        "name": "Hayko Cepkin Konseri",
+        "category": "konser",
+        "description": "Hayko Cepkin'ın enerjisi yüksek ve etkileyici performansıyla dolu bir konser. Rock müziği sevenler için imperdible!",
+        "date": "24-01-2024 23:00",
+        "image": "https://i.pinimg.com/564x/db/59/8a/db598a2d5332ae718bd686e97c0ab91d.jpg",
+        "link": "https://www.google.com",
+        "location": "Paris, La Cigale, Fransa",
+        "stars": 3
+      },
+      {
+        "id": 4,
+        "name": "Teoman Konseri",
+        "category": "konser",
+        "description": "Teoman'ın unutulmaz şarkılarıyla dolu bir konser. Türk rock müziğinin sevilen ismi sahnede!",
+        "date": "26-01-2024 19:30",
+        "image": "https://i.pinimg.com/564x/7c/bd/3c/7cbd3c3cf4da1d7620bc77fb6e634f7b.jpg",
+        "link": "https://www.google.com",
+        "location": "İstanbul, Harbiye Cemil Topuzlu Açıkhava Sahnesi, Türkiye",
+        "stars": 4
+      },
+      {
+        "id": 5,
+        "name": "Duman Konseri",
+        "category": "konser",
+        "description": "Duman'ın efsane şarkılarıyla dolu bir konser gecesi. Grunge müziğin öncülerinden biri sahnede!",
+        "date": "28-01-2024 22:15",
+        "image": "https://i.pinimg.com/564x/5a/7c/25/5a7c2511d8f27bee8859e354b0f9da43.jpg",
+        "link": "https://www.google.com",
+        "location": "İstanbul, KüçükÇiftlik Park, Türkiye",
+        "stars": 3
+      },
+      {
+        "id": 6,
+        "name": "Sezen Aksu Konseri",
+        "category": "konser",
+        "description": "Sezen Aksu'nun eşsiz sesiyle dolu bir konser. Türk müziğinin kraliçesi sahnede!",
+        "date": "30-01-2024 20:45",
+        "image": "https://i.pinimg.com/564x/cb/f1/3f/cbf13f6055a07230f48de104604c761b.jpg",
+        "link": "https://www.google.com",
+        "location": "İstanbul, İş Sanat Kültür Merkezi, Türkiye",
+        "stars": 5
+      },
+      {
+        "id": 7,
+        "name": "Ajda Pekkan Konseri",
+        "category": "konser",
+        "description": "Ajda Pekkan'ın muhteşem performansıyla dolu bir gece. Pop müziğin kraliçesiyle buluşun!",
+        "date": "01-02-2024 19:00",
+        "image": "https://i.pinimg.com/564x/b9/2c/5b/b92c5bb677a424899249230faa254cde.jpg",
+        "link": "https://www.google.com",
+        "location": "Ankara, Ankara Spor ve Sergi Kompleksi, Türkiye",
+        "stars": 4
+      },
+      {
+        "id": 8,
+        "name": "Tarkan Konseri",
+        "category": "konser",
+        "description": "Tarkan'ın eşsiz şarkıları ve dans performansıyla dolu bir konser deneyimi. Bu muhteşem geceyi kaçırmayın!",
+        "date": "03-02-2024 21:30",
+        "image": "https://i.pinimg.com/564x/a1/a0/df/a1a0dfe39d865cca7b5f2df2abe7f4a2.jpg",
+        "link": "https://www.google.com",
+        "location": "İzmir, İzmir Arena, Türkiye",
+        "stars": 5
+      },
+      {
+        "id": 9,
+        "name": "Shakespeare Tiyatrosu",
+        "category": "tiyatro",
+        "description": "Klasik Shakespeare oyunlarıyla dolu unutulmaz bir tiyatro deneyimi sizi bekliyor. Sanatseverler için imperdible!",
+        "date": "22-03-2024 19:00",
+        "image": "https://i.pinimg.com/564x/0a/34/1d/0a341d1609ab29310367ef2be329cd13.jpg",
+        "link": "https://www.shakespearetheater.com",
+        "location": "Londra, The Globe Theatre, Birleşik Krallık",
+        "stars": 5
+      },
+      {
+        "id": 10,
+        "name": "Modern Sanatlar Tiyatrosu",
+        "category": "tiyatro",
+        "description": "Çağdaş ve deneysel performansların sergilendiği bir tiyatro gecesi. Sanatın sınırlarını keşfedin!",
+        "date": "25-03-2024 20:30",
+        "image": "https://i.pinimg.com/564x/11/1f/30/111f30ee89f673f85851a2abfe11a85c.jpg",
+        "link": "https://www.modernartstheater.com",
+        "location": "New York, Broadway Theatre, ABD",
+        "stars": 3
+      },
+      {
+        "id": 11,
+        "name": "Komedi Tiyatrosu",
+        "category": "tiyatro",
+        "description": "Eğlenceli komedi gösterileri ve stand-up performanslarının yer aldığı bir tiyatro gecesi. Kahkaha garantili!",
+        "date": "28-03-2024 21:15",
+        "image": "https://i.pinimg.com/736x/54/63/2a/54632a47afafab74aa2186d66d5fdac5.jpg",
+        "link": "https://www.comedyplayhouse.com",
+        "location": "Los Angeles, Laugh Factory, ABD",
+        "stars": 3
+      },
+      {
+        "id": 12,
+        "name": "Drama Sarayı",
+        "category": "tiyatro",
+        "description": "Yoğun ve etkileyici drama prodüksiyonlarının sergilendiği bir tiyatro gecesi. Duygusal bir yolculuğa hazır olun!",
+        "date": "30-03-2024 18:45",
+        "image": "https://i.pinimg.com/564x/ff/a7/6e/ffa76e7e8d96f8ae9db76ac87db6cf36.jpg",
+        "link": "https://www.dramapalace.com",
+        "location": "Paris, Théâtre du Châtelet, Fransa",
+        "stars": 2
+      },
+      {
+        "id": 13,
+        "name": "Müzikal Tiyatro Stüdyosu",
+        "category": "tiyatro",
+        "description": "Muhteşem müzikaller ve Broadway tarzı performansların yer aldığı bir tiyatro gecesi. Sanat dolu anlar yaşayın!",
+        "date": "02-04-2024 19:30",
+        "image": "https://i.pinimg.com/564x/b4/4a/16/b44a16f6bda0b39066fd991ad5608fb7.jpg",
+        "link": "https://www.musicaltheaterstudio.com",
+        "location": "Chicago, Chicago Theatre, ABD",
+        "stars": 4
+      },
+      {
+        "id": 19,
+        "name": "Futbol Maçı: Beşiktaş JK vs Trabzon SK",
+        "category": "spor",
+        "description": "İki büyük takım arasında heyecan dolu bir futbol maçı. Bu mücadeleyi kaçırmayın!",
+        "date": "25-02-2024 17:30",
+        "image": "https://i.pinimg.com/564x/ab/42/b1/ab42b10ddc6fbba48a6f5650a18872d3.jpg",
+        "link": "https://www.google.com",
+        "location": "İstanbul, Vodafone Park, Türkiye",
+        "stars": 4
+      },
+      {
+        "id": 20,
+        "name": "Basketbol Maçı: Fenerbahçe Beko vs Galatasaray",
+        "category": "spor",
+        "description": "Rakip takımlar arasında geçecek yoğun bir basketbol maçı. Basketbol tutkunları için imperdible!",
+        "date": "27-02-2024 19:45",
+        "image": "https://i.pinimg.com/564x/bb/f7/54/bbf754a76c7ff225bdcc49d3a4b0b218.jpg",
+        "link": "https://www.google.com",
+        "location": "New York, Madison Square Garden, ABD",
+        "stars": 3
+      },
+      {
+        "id": 21,
+        "name": "Tenis Şampiyonası",
+        "category": "spor",
+        "description": "Top oyuncuların yer aldığı büyük tenis şampiyonası. Tenis tutkunları için imperdible!",
+        "date": "01-03-2024 14:00",
+        "image": "https://i.pinimg.com/564x/1e/c9/bc/1ec9bcfd171f541ebc649552f2b2771c.jpg",
+        "link": "https://www.google.com",
+        "location": "Paris, Roland Garros, Fransa",
+        "stars": 5
+      },
+      {
+        "id": 22,
+        "name": "Golf Turnuvası",
+        "category": "spor",
+        "description": "Resimdeki bir golf sahasında yıllık golf turnuvası. Golf tutkunları için unutulmaz bir gün!",
+        "date": "03-03-2024 08:00",
+        "image": "https://i.pinimg.com/564x/f5/27/ab/f527aba47e96e9651cc09a7753d764f2.jpg",
+        "link": "https://www.google.com",
+        "location": "Londra, The Belfry Golf Club, Birleşik Krallık",
+        "stars": 4
+      },
+      {
+        "id": 23,
+        "name": "Maraton: Şehir Koşusu",
+        "category": "spor",
+        "description": "Fitness tutkunları için şehir genelinde düzenlenen bir maraton. Katılmaya hazır mısınız?",
+        "date": "05-03-2024 09:30",
+        "image": "https://i.pinimg.com/564x/5d/19/b5/5d19b580cd24047e7c9a8747aeb15fdf.jpg",
+        "link": "https://www.google.com",
+        "location": "Berlin, Brandenburg Gate, Almanya",
+        "stars": 5
+      }
+    ]
+  }
+  
