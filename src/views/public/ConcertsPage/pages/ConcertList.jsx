@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from "react";
-import eventData from "../../../../data/eventData";
+import { axiosInstance } from "../../../../api/axiosInstance";
 import "../../../../styles/card.css"
 function ConcertList() {
-  const [concertData, setconcertData] = useState(eventData);
-  const [filteredData, setFilteredData] = useState([]);
+
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    setFilteredData(concertData.filter((q) => q.category === "konser"));
-  }, [concertData]);
+    // Axios instance kullanarak veri çekme
+    axiosInstance.get('/eventList')
+      .then(response => {
+        // Filtrasyon işlemi: Sadece "tiyatro" kategorisindeki etkinlikleri al
+        const filteredEvents = response.data.filter(item => item.category === "konser");
+        setEvents(filteredEvents);
+      })
+      .catch(error => console.error("Veri çekme hatası:", error));
+  }, []);
 
 
 
   return (
     <div className="card-container">
-    {filteredData.map((item, index) => (
+    {events.map((item, index) => (
       <div className="card" key={index}>
         <img className="card-image" src={item.image} alt={item.name} />
         <h2 className="card-title">{item.name}</h2>

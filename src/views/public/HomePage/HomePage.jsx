@@ -1,14 +1,21 @@
-import { useState } from "react";
-import eventData from "../../../../data/eventData"
-import "../../../../styles/card.css"
+import { useState,useEffect } from "react";
+import { axiosInstance } from "../../../api/axiosInstance";
+import "../../../styles/card.css"
 function HomePage() {
-  const [data, setdata] = useState(eventData);
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    // Axios instance kullanarak veri çekme
+    axiosInstance.get('/eventList')
+      .then(response => setEvents(response.data))
+      .catch(error => console.error("Veri çekme hatası:", error));
+  }, []);
   
   return (
     <>
       <h1>Tüm Etkinlikler</h1>
       <div className="card-container">
-        {data.map((item, index) => (
+        {events.map((item, index) => (
           <div className="card" key={index}>
             <img className="card-image" src={item.image} alt={item.name} />
             <h2 className="card-title">{item.name}</h2>

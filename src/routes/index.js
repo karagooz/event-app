@@ -1,10 +1,11 @@
-import HomePage from '../views/public/pages/HomePage/HomePage'
-import SportList from '../views/public/pages/SportPage/SportList'
-import ConcertList from '../views/public/pages/ConcertsPage/ConcertList'
-import TheatreList from '../views/public/pages/TheatrePage/TheatreList'
+import HomePage from '../views/public/HomePage/HomePage'
+import SportPage from '../views/public/SportPage'
+import ConcertsPage from '../views/public/ConcertsPage'
+import TheatrePage from '../views/public/TheatrePage'
 import Profile from '../views/private/pages/Profile'
-import About from '../views/public/pages/AboutContactPages/About'
-import Contact from '../views/public/pages/AboutContactPages/Contact'
+import About from '../views/public/AboutContactPages/About'
+import Contact from '../views/public/AboutContactPages/Contact'
+
 export const publicRoutes = [
     {
         path:'/*',
@@ -12,16 +13,16 @@ export const publicRoutes = [
     },
     {
         path:'/sport/*',
-        element: <SportList />
+        element: <SportPage />
     },
     {
         path:'/concert/*',
-        element: <ConcertList />
+        element: <ConcertsPage />
     }
 ,
     {
         path:'/theatre/*',
-        element: <TheatreList />
+        element: <TheatrePage />
     }
 ,
     {
