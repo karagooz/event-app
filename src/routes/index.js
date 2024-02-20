@@ -5,6 +5,7 @@ import TheatrePage from '../views/public/TheatrePage'
 import Profile from '../views/private/pages/Profile'
 import About from '../views/public/AboutContactPages/About'
 import Contact from '../views/public/AboutContactPages/Contact'
+import PastEvents from '../views/public/PastEventsPage/PastEvents'
 
 export const publicRoutes = [
     //routes
@@ -35,6 +36,11 @@ export const publicRoutes = [
     {
         path:'/contact/*',
         element:<Contact />
+    }
+,
+    {
+        path:'/past/*',
+        element:<PastEvents />
     }
 ,
 
