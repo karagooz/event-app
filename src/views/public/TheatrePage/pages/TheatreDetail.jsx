@@ -1,25 +1,28 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router'; // Corrected import
+import { axiosInstance } from '../../../../api/axiosInstance';
 
 function TheatreDetail() {
-  const { id } = useParams()
-  const [detail, setdetail] = useState({})
+  const { id } = useParams();
+  const [detail, setDetail] = useState({});
+
   useEffect(() => {
-    axios.get('http://localhost:3000/eventList' + id)
+    axiosInstance.get(`/eventList/${id}`)
       .then(res => {
-        setdetail(res.data)
+        setDetail(res.data);
       })
       .catch(err => {
-        console.log(err)
-      })
-  }, [])
+        console.log(err);
+      });
+  }, [id]);
+
   return (
     <>
-    <h1>Id: {id}</h1>
-    <hr />
-    <h1>Name: {detail.name}</h1>
-  </>
-  )
+      <h1>Id: {id}</h1>
+      <hr />
+      <h1>Name: {detail.name}</h1>
+    </>
+  );
 }
 
-export default TheatreDetail
+export default TheatreDetail;

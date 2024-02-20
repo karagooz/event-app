@@ -1,3 +1,7 @@
+body{
+  background-color: #EEEDEB; /* Arka plan rengini değiştirebilirsiniz */
+
+}
 .App {
   text-align: center;
 }

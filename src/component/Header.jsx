@@ -1,60 +1,69 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, InputBase, Box ,Button} from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, Button } from '@mui/material';
 import { styled } from '@mui/system';
-import eventData from '../data/eventData'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt,faArrowRight, faMicrophoneAlt, faTheaterMasks, faRunning, faPhone, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 const RotatedTypography = styled(Typography)(({ theme }) => ({
-  transform: 'rotate(-35deg)',
   position: 'absolute',
   marginLeft: '10px',
   marginTop: '-10px',
-  boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)',
-  textShadow: '2px 2px 4px rgba(255, 255, 255, 0.5)',
+  
+}));
+
+const StyledBox = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+}));
+
+const StyledButton = styled(Button)(({ theme }) => ({
+  textShadow: '2px 2px 4px rgba(255, 255, 255, 0.5)', // Yeni stil
 }));
 
 function Header() {
-  const [name, setname] = React.useState("");
-  const [data, setdata] = React.useState(eventData);
-  const search = (value) => {
-    var searchData = value.toLowerCase();
-    var filteredEvents = data.filter(q => q.name.toLowerCase().includes(searchData))
-    setdata(filteredEvents);
-  }
-  
-
   return (
-    <AppBar position="static" style={{ height: '80px' }}>
-      <Toolbar>
-        <Box sx={{ flexGrow: 1, position: 'relative' }}>
-          <RotatedTypography variant="h6">
-            <Button color="inherit" component={Link} to="/">Eventhall</Button>
-          </RotatedTypography>
-          
-        </Box>
-        <Button color="inherit" component={Link} to="/concert">
-          Concerts
-        </Button>
-        <Button color="inherit" component={Link} to="/theatre">
-          Theatre
-        </Button>
-        <Button color="inherit" component={Link} to="/sport">
-          Sports
-        </Button>
-        <Button color="inherit" component={Link} to="/contact">
-          Contact
-        </Button>
-        <Button color="inherit" component={Link} to="/about">
-          About
-        </Button>
-        <InputBase
-         sx={{ ml: 1, mr: 1, width: '200px', backgroundColor: 'white' }}
-         placeholder="Search"
-         inputProps={{ 'aria-label': 'search' }}
-         onChange={(e) => search(e.target.value)}
-/>
-      </Toolbar>
-    </AppBar>
+    <>
+      <AppBar position="static" style={{ height: '80px' , backgroundColor:"#2D3250", borderRadius:"3px"}}>
+        <Toolbar>
+          <StyledBox sx={{ flexGrow: 1, position: 'relative' }}>
+            <RotatedTypography variant="h5">
+              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <StyledBox>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: '5px' }} />
+                  <br />
+                  Eventhall
+                </StyledBox>
+              </Link>
+            </RotatedTypography>
+          </StyledBox>
+          <StyledButton color="inherit" component={Link} to="/concert">
+            <FontAwesomeIcon icon={faMicrophoneAlt} style={{ marginRight: '5px' }} />
+            Concerts
+          </StyledButton>
+          <StyledButton color="inherit" component={Link} to="/theatre">
+            <FontAwesomeIcon icon={faTheaterMasks} style={{ marginRight: '5px' }} />
+            Theatre
+          </StyledButton>
+          <StyledButton color="inherit" component={Link} to="/sport">
+            <FontAwesomeIcon icon={faRunning} style={{ marginRight: '5px' }} />
+            Sports
+          </StyledButton>
+          <StyledButton color="inherit" component={Link} to="/past">
+            <FontAwesomeIcon icon={faArrowRight} style={{ marginRight: '5px' }} />
+            Past Events
+          </StyledButton>
+          <StyledButton color="inherit" component={Link} to="/contact">
+            <FontAwesomeIcon icon={faPhone} style={{ marginRight: '5px' }} />
+            Contact
+          </StyledButton>
+          <StyledButton color="inherit" component={Link} to="/about">
+            <FontAwesomeIcon icon={faInfoCircle} style={{ marginRight: '5px' }} />
+            About
+          </StyledButton>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 }
 
