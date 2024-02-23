@@ -9,7 +9,8 @@ const RotatedTypography = styled(Typography)(({ theme }) => ({
   position: 'absolute',
   marginLeft: '10px',
   marginTop: '-10px',
-  
+  fontFamily: "'Josefin Sans', sans-serif",
+  fontWeight: 1000,
 }));
 
 const StyledBox = styled(Box)(({ theme }) => ({
@@ -18,17 +19,21 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-  textShadow: '2px 2px 4px rgba(255, 255, 255, 0.5)', // Yeni stil
+  textShadow: '2px 2px 4px rgba(255, 255, 255, 0.5)',
 }));
 
-function Header() {
+function Header({ handleClearFilters }) {
+  const handleEventhallClick = () => {
+    handleClearFilters();
+  };
+
   return (
     <>
-      <AppBar position="static" style={{ height: '80px' , backgroundColor:"#2D3250", borderRadius:"3px"}}>
+      <AppBar position="static" style={{ height: '80px', backgroundColor: "#2D3250", borderRadius: "3px" }}>
         <Toolbar>
           <StyledBox sx={{ flexGrow: 1, position: 'relative' }}>
             <RotatedTypography variant="h5">
-              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleEventhallClick}>
                 <StyledBox>
                   <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: '5px' }} />
                   <br />

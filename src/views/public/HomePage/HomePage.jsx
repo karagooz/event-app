@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays,faMapMarkerAlt,} from "@fortawesome/free-solid-svg-icons";
 import "react-datepicker/dist/react-datepicker.css";
 import Filters from "../../../component/Filters";
+import Slider from "../../../component/Slider";
 
 function HomePage() {
   const [events, setEvents] = useState([]);
@@ -81,9 +82,13 @@ function HomePage() {
       .locale("tr")
       .format("DD MMMM dddd YYYY HH:mm");
   };
-
+  const handleLocationClick = (location) => {
+    setSelectedLocation(location);
+    
+  };
   return (
     <>
+    
       <Filters
         searchInput={searchInput}
         categories={uniqueCategories}
@@ -97,8 +102,8 @@ function HomePage() {
         handleDateChange={handleDateChange}
         handleClearFilters={handleClearFilters}
       />
-
-      <h1>Tüm Etkinlikler</h1>
+      <Slider/>
+      <h1>All Events</h1>
       <div className="card-container">
         {filteredEvents.map((item, index) => (
           <div className="card" key={index}>
@@ -110,8 +115,12 @@ function HomePage() {
               <br />
               {formattedDate(item.date)}
             </span>
-            <span className="card-location">
-              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: 'green' }}/>
+            <span
+              className="card-location"
+              style={{ color: 'green', cursor: 'pointer' }}
+              onClick={() => handleLocationClick(item.location)}
+            >
+              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: 'green' }} />
               <br />
               {item.location}
             </span>

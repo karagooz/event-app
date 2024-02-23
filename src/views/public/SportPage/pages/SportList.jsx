@@ -34,7 +34,7 @@ function SportList() {
               <br />
               {formattedDate(item.date)}
             </span>
-            <span className="card-location">
+            <span className="card-location" style={{ color: 'green' }}>
               <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: 'green' }}/>
               <br />
               {item.location}
