@@ -4,39 +4,37 @@ import "react-datepicker/dist/react-datepicker.css";
 import { TextField, Select, MenuItem, Button, Box, Card, CardContent, FormControl, InputLabel } from "@mui/material";
 import tr from 'date-fns/locale/tr';
 
-function Filter({
+function Filters({
   searchInput,
   handleSearchChange,
   categories,
   locations,
   selectedCategory,
   selectedLocation,
-  selectedDate,
+  startDate,
+  endDate,
+  handleStartDateChange,
+  handleEndDateChange,
   handleCategoryChange,
   handleLocationChange,
-  handleDateChange,
   handleClearFilters,
 }) {
   return (
-    <Card style={{ marginBottom: "20px" , marginTop:"10px" ,backgroundColor:"#EEEDEB"}}>
+    <Card style={{ marginBottom: "20px", marginTop: "10px", backgroundColor: "#EEEDEB" }}>
       <CardContent>
         <Box display="flex" alignItems="center" gap={1}>
-          {/* Search Input */}
           <FormControl sx={{ flex: 1, marginBottom: "16px" }}>
-           
-            <InputLabel htmlFor="search-input" sx={{ color: "rgba(0, 0, 0, 0.87)" }}>Search for Events</InputLabel>
-           <br />
-           <br />
+            <br />
+            <br />
             <TextField
               id="search-input"
               style={{ height: "40px" }}
               value={searchInput}
               onChange={handleSearchChange}
-              
+              placeholder="Search by Name"
             />
           </FormControl>
 
-          {/* Category Select */}
           <FormControl sx={{ height: "40px", flex: 1, marginRight: "10px", marginBottom: "16px" }}>
             <InputLabel htmlFor="category-select" sx={{ color: "rgba(0, 0, 0, 0.87)" }}>Category</InputLabel>
             <br />
@@ -54,7 +52,6 @@ function Filter({
             </Select>
           </FormControl>
 
-          {/* Location Select */}
           <FormControl sx={{ height: "40px", flex: 1, marginRight: "10px", marginBottom: "16px" }}>
             <InputLabel htmlFor="location-select" sx={{ color: "rgba(0, 0, 0, 0.87)" }}>Location</InputLabel>
             <br />
@@ -71,22 +68,33 @@ function Filter({
               ))}
             </Select>
           </FormControl>
-          
-          {/* Date Picker */}
+
           <div style={{ height: "40px", flex: 1, marginBottom: "16px" }}>
             <br />
             <DatePicker
-              id="date-picker"
-              selected={selectedDate}
-              onChange={handleDateChange}
+              id="start-date-picker"
+              selected={startDate}
+              onChange={handleStartDateChange}
               dateFormat="dd-MM-yyyy"
-              placeholderText="Select date"
-              customInput={<TextField style={{ height: "40px" }} />} // Date Picker için özel giriş alanı
+              placeholderText="Select start date"
+              customInput={<TextField style={{ height: "40px" }} />} 
               locale={tr}
             />
           </div>
-                <br />
-          {/* Clear Filters Button */}
+
+          <div style={{ height: "40px", flex: 1, marginBottom: "16px" }}>
+            <br />
+            <DatePicker
+              id="end-date-picker"
+              selected={endDate}
+              onChange={handleEndDateChange}
+              dateFormat="dd-MM-yyyy"
+              placeholderText="Select end date"
+              customInput={<TextField style={{ height: "40px" }} />} 
+              locale={tr}
+            />
+          </div>
+
           <Button onClick={handleClearFilters} variant="#2D3250" color="dark" sx={{ height: "40px", flex: 1, marginBottom: "10px" }}>
             Clear Filters
           </Button>
@@ -96,4 +104,4 @@ function Filter({
   );
 }
 
-export default Filter;
+export default Filters;
