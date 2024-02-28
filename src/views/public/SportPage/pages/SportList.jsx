@@ -3,6 +3,7 @@ import "../../../../styles/card.css"
 import {axiosInstance} from '../../../../api/axiosInstance'
 import moment from "moment";
 import "moment/locale/tr";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays,faMapMarkerAlt,} from "@fortawesome/free-solid-svg-icons";
 function SportList() {
@@ -11,7 +12,7 @@ function SportList() {
   useEffect(() => {
     axiosInstance.get('/eventList')
       .then(response => {
-        const filteredEvents = response.data.filter(item => item.category === "spor");
+        const filteredEvents = response.data.filter(item => item.category === "sport");
         setEvents(filteredEvents);
       })
       .catch(error => console.error("Veri çekme hatası:", error));
@@ -22,12 +23,15 @@ function SportList() {
       .format("DD MMMM dddd YYYY HH:mm");
   };
 
-  return (
-    <div className="card-container">
+  
+    return (
+      <div className="card-container">
         {events.map((item, index) => (
-          <div className="card" key={index}>
-            <img className="card-image" src={item.image} alt={item.name} />
-            <h2 className="card-title">{item.name}</h2>
+          <div key={index} className="card">
+            <Link to={'/sport/'+ item.id} className="card-link" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <img className="card-image" src={item.image} alt={item.name} />
+              <h2 className="card-title">{item.name}</h2>
+            </Link>
             <span className="card-description">{item.description}</span>
             <span className="card-date">
               <FontAwesomeIcon icon={faCalendarDays} />
@@ -35,14 +39,16 @@ function SportList() {
               {formattedDate(item.date)}
             </span>
             <span className="card-location" style={{ color: 'green' }}>
-              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: 'green' }}/>
+              <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: 'green' }} />
               <br />
               {item.location}
             </span>
           </div>
         ))}
       </div>
-  )
+    );
+    
+  
 }
 
 export default SportList
