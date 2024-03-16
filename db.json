@@ -1,203 +1,513 @@
 {
-    "eventList": [
-      {
-        "id": 1,
-        "name": "Cem Adrian Konseri",
-        "category": "konser",
-        "description": "Cem Adrian'ın eşsiz sesi ve müziğiyle dolu bir konser. Unutulmaz anlar yaşamak için bu konseri kaçırmayın!",
-        "date": "22-01-2024 20:00",
-        "image": "https://i.pinimg.com/564x/9f/58/16/9f5816e363003fd76f9528d555ab310a.jpg",
-        "link": "https://www.google.com",
-        "location": "İstanbul, Harbiye Cemil Topuzlu Açıkhava Sahnesi, Türkiye",
-        "stars": 3
-      },
-      {
-        "id": 2,
-        "name": "Manuş Baba Konseri",
-        "category": "konser",
-        "description": "Manuş Baba'nın dokunaklı şarkılarıyla dolu bir konser gecesi. Kendine has tarzıyla dinleyicilere unutulmaz anlar yaşatacak.",
-        "date": "24-01-2024 21:00",
-        "image": "https://i.pinimg.com/564x/08/d2/9b/08d29b4cc31aa06ce860bf58d2886010.jpg",
-        "link": "https://www.google.com",
-        "location": "Paris, Le Bataclan, Fransa",
-        "stars": 3
-      },
-      {
-        "id": 3,
-        "name": "Hayko Cepkin Konseri",
-        "category": "konser",
-        "description": "Hayko Cepkin'ın enerjisi yüksek ve etkileyici performansıyla dolu bir konser. Rock müziği sevenler için imperdible!",
-        "date": "24-01-2024 23:00",
-        "image": "https://i.pinimg.com/564x/2f/a5/41/2fa541b3c59f04f43a70e390bfb52a00.jpg",
-        "link": "https://www.google.com",
-        "location": "Paris, La Cigale, Fransa",
-        "stars": 3
-      },
-      {
-        "id": 4,
-        "name": "Teoman Konseri",
-        "category": "konser",
-        "description": "Teoman'ın unutulmaz şarkılarıyla dolu bir konser. Türk rock müziğinin sevilen ismi sahnede!",
-        "date": "26-01-2024 19:30",
-        "image": "https://i.pinimg.com/564x/c2/1d/73/c21d7386dcca752e930ba477937675da.jpg",
-        "link": "https://www.google.com",
-        "location": "İstanbul, Harbiye Cemil Topuzlu Açıkhava Sahnesi, Türkiye",
-        "stars": 4
-      },
-      {
-        "id": 5,
-        "name": "Duman Konseri",
-        "category": "konser",
-        "description": "Duman'ın efsane şarkılarıyla dolu bir konser gecesi. Grunge müziğin öncülerinden biri sahnede!",
-        "date": "28-01-2024 22:15",
-        "image": "https://i.pinimg.com/564x/2e/97/02/2e9702cfdbbab781c767b1f38b0596de.jpg",
-        "link": "https://www.google.com",
-        "location": "İstanbul, KüçükÇiftlik Park, Türkiye",
-        "stars": 3
-      },
-      {
-        "id": 6,
-        "name": "Sezen Aksu Konseri",
-        "category": "konser",
-        "description": "Sezen Aksu'nun eşsiz sesiyle dolu bir konser. Türk müziğinin kraliçesi sahnede!",
-        "date": "30-01-2024 20:45",
-        "image": "https://i.pinimg.com/564x/cb/f1/3f/cbf13f6055a07230f48de104604c761b.jpg",
-        "link": "https://www.google.com",
-        "location": "İstanbul, İş Sanat Kültür Merkezi, Türkiye",
-        "stars": 5
-      },
-      {
-        "id": 7,
-        "name": "Ajda Pekkan Konseri",
-        "category": "konser",
-        "description": "Ajda Pekkan'ın muhteşem performansıyla dolu bir gece. Pop müziğin kraliçesiyle buluşun!",
-        "date": "01-02-2024 19:00",
-        "image": "https://i.pinimg.com/564x/b9/e7/f1/b9e7f1a2f56904338fe7ba699b78da7a.jpg",
-        "link": "https://www.google.com",
-        "location": "Ankara, Ankara Spor ve Sergi Kompleksi, Türkiye",
-        "stars": 4
-      },
-      {
-        "id": 8,
-        "name": "Tarkan Konseri",
-        "category": "konser",
-        "description": "Tarkan'ın eşsiz şarkıları ve dans performansıyla dolu bir konser deneyimi. Bu muhteşem geceyi kaçırmayın!",
-        "date": "03-02-2024 21:30",
-        "image": "https://i.pinimg.com/564x/fc/29/73/fc2973809422a94d6edfae72e0604cfd.jpg",
-        "link": "https://www.google.com",
-        "location": "İzmir, İzmir Arena, Türkiye",
-        "stars": 5
-      },
-      {
-        "id": 9,
-        "name": "Yalnız Gece Tiyatrosu",
-        "category": "tiyatro",
-        "description": "Klasik Shakespeare oyunlarıyla dolu unutulmaz bir tiyatro deneyimi sizi bekliyor. Sanatseverler için imperdible!",
-        "date": "22-03-2024 19:00",
-        "image": "https://images.pexels.com/photos/5135106/pexels-photo-5135106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.shakespearetheater.com",
-        "location": "Londra, The Globe Theatre, Birleşik Krallık",
-        "stars": 5
-      },
-      {
-        "id": 10,
-        "name": "Modern Sanatlar Tiyatrosu",
-        "category": "tiyatro",
-        "description": "Çağdaş ve deneysel performansların sergilendiği bir tiyatro gecesi. Sanatın sınırlarını keşfedin!",
-        "date": "25-03-2024 20:30",
-        "image": "https://images.pexels.com/photos/109669/pexels-photo-109669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.modernartstheater.com",
-        "location": "New York, Broadway Theatre, ABD",
-        "stars": 3
-      },
-      {
-        "id": 11,
-        "name": "Komedi Tiyatrosu",
-        "category": "tiyatro",
-        "description": "Eğlenceli komedi gösterileri ve stand-up performanslarının yer aldığı bir tiyatro gecesi. Kahkaha garantili!",
-        "date": "28-03-2024 21:15",
-        "image": "https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.comedyplayhouse.com",
-        "location": "Los Angeles, Laugh Factory, ABD",
-        "stars": 3
-      },
-      {
-        "id": 12,
-        "name": "Drama Sarayı",
-        "category": "tiyatro",
-        "description": "Yoğun ve etkileyici drama prodüksiyonlarının sergilendiği bir tiyatro gecesi. Duygusal bir yolculuğa hazır olun!",
-        "date": "30-03-2024 18:45",
-        "image": "https://images.pexels.com/photos/6899763/pexels-photo-6899763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.dramapalace.com",
-        "location": "Paris, Théâtre du Châtelet, Fransa",
-        "stars": 2
-      },
-      {
-        "id": 13,
-        "name": "Müzikal Tiyatro Stüdyosu",
-        "category": "tiyatro",
-        "description": "Muhteşem müzikaller ve Broadway tarzı performansların yer aldığı bir tiyatro gecesi. Sanat dolu anlar yaşayın!",
-        "date": "02-04-2024 19:30",
-        "image": "https://images.pexels.com/photos/9275492/pexels-photo-9275492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.musicaltheaterstudio.com",
-        "location": "Chicago, Chicago Theatre, ABD",
-        "stars": 4
-      },
-      {
-        "id": 19,
-        "name": "Futbol Maçı: Beşiktaş JK vs Trabzon SK",
-        "category": "spor",
-        "description": "İki büyük takım arasında heyecan dolu bir futbol maçı. Bu mücadeleyi kaçırmayın!",
-        "date": "25-02-2024 17:30",
-        "image": "https://images.pexels.com/photos/13208200/pexels-photo-13208200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.google.com",
-        "location": "İstanbul, Vodafone Park, Türkiye",
-        "stars": 4
-      },
-      {
-        "id": 20,
-        "name": "Basketbol Maçı: Fenerbahçe Beko vs Galatasaray",
-        "category": "spor",
-        "description": "Rakip takımlar arasında geçecek yoğun bir basketbol maçı. Basketbol tutkunları için imperdible!",
-        "date": "27-02-2024 19:45",
-        "image": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.google.com",
-        "location": "New York, Madison Square Garden, ABD",
-        "stars": 3
-      },
-      {
-        "id": 21,
-        "name": "Tenis Şampiyonası",
-        "category": "spor",
-        "description": "Top oyuncuların yer aldığı büyük tenis şampiyonası. Tenis tutkunları için imperdible!",
-        "date": "01-03-2024 14:00",
-        "image": "https://images.pexels.com/photos/5739223/pexels-photo-5739223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.google.com",
-        "location": "Paris, Roland Garros, Fransa",
-        "stars": 5
-      },
-      {
-        "id": 22,
-        "name": "Golf Turnuvası",
-        "category": "spor",
-        "description": "Resimdeki bir golf sahasında yıllık golf turnuvası. Golf tutkunları için unutulmaz bir gün!",
-        "date": "03-03-2024 08:00",
-        "image": "https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.google.com",
-        "location": "Londra, The Belfry Golf Club, Birleşik Krallık",
-        "stars": 4
-      },
-      {
-        "id": 23,
-        "name": "Maraton: Şehir Koşusu",
-        "category": "spor",
-        "description": "Fitness tutkunları için şehir genelinde düzenlenen bir maraton. Katılmaya hazır mısınız?",
-        "date": "05-03-2024 09:30",
-        "image": "https://images.pexels.com/photos/5687501/pexels-photo-5687501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://www.google.com",
-        "location": "Berlin, Brandenburg Gate, Almanya",
-        "stars": 5
+  "eventList": [
+    {
+      "id": 1,
+      "name": "Cem Adrian Konseri",
+      "category": "concert",
+      "description": "Cem Adrian'ın eşsiz sesi ve müziğiyle dolu bir konser. Unutulmaz anlar yaşamak için bu konseri kaçırmayın!",
+      "date": "22-01-2024 20:00",
+      "image": "https://i.pinimg.com/564x/9f/58/16/9f5816e363003fd76f9528d555ab310a.jpg",
+      "link": "https://www.google.com",
+      "location": "İstanbul, Harbiye Cemil Topuzlu Açıkhava Sahnesi, Türkiye",
+      "map": {
+        "location": [ 
+          {"latitude": 41.0458, "longitude": 28.9885}]},
+      "stars": 3,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 150, "stock": 100},
+          {"category": "Normal", "price": 75, "stock": 200}
+        ],
+        "rules": {
+          "camera": "Kamera kayıt cihazları kullanmak yasaktır.",
+          "ticketPresentation": "Etkinlik günü geçerli bir biletinizi göstermek zorunludur.",
+          "doorOpeningTime": "Kapı açılış saati: 19:00"
+        },
+        "photos": [
+          "https://i.pinimg.com/564x/72/f5/92/72f59286bfba6914db43b23c56226ee8.jpg",
+          "https://image2.jpg"
+        ]
       }
+    },
+    {
+      "id": 2,
+      "name": "Manuş Baba Konseri",
+      "category": "concert",
+      "description": "Manuş Baba'nın dokunaklı şarkılarıyla dolu bir konser gecesi. Kendine has tarzıyla dinleyicilere unutulmaz anlar yaşatacak.",
+      "date": "24-01-2024 21:00",
+      "image": "https://i.pinimg.com/564x/08/d2/9b/08d29b4cc31aa06ce860bf58d2886010.jpg",
+      "link": "https://www.google.com",
+      "location": "Paris, Le Bataclan, Fransa",
+      "map": {
+        "location": [ {"latitude": 48.8625, "longitude": 2.3709}]},
+      "stars": 3,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 200, "stock": 150},
+          {"category": "Normal", "price": 100, "stock": 250},
+          {"category": "Öğrenci", "price": 50, "stock": 100}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında kamera kullanımı serbesttir.",
+          "ticketPresentation": "Biletinizi elektronik cihazınızda veya basılı olarak gösteriniz.",
+          "doorOpeningTime": "Kapı açılış saati: 20:00"
+        },
+        "photos": [
+          "https://image3.jpg",
+          "https://image4.jpg"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Hayko Cepkin Konseri",
+      "category": "concert",
+      "description": "Hayko Cepkin'ın enerjisi yüksek ve etkileyici performansıyla dolu bir konser. Rock müziği sevenler için imperdible!",
+      "date": "24-01-2024 23:00",
+      "image": "https://i.pinimg.com/564x/2f/a5/41/2fa541b3c59f04f43a70e390bfb52a00.jpg",
+      "link": "https://www.google.com",
+      "location": "Paris, La Cigale, Fransa",
+      "map": {
+        "location": [ {"latitude": 48.8822, "longitude": 2.3448}]},
+      "stars": 3,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 180, "stock": 120},
+          {"category": "Normal", "price": 90, "stock": 180}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında kamera kullanımı serbesttir.",
+          "ticketPresentation": "Biletinizi etkinlik günü yanınızda bulundurunuz.",
+          "doorOpeningTime": "Kapı açılış saati: 22:00"
+        },
+        "photos": [
+          "https://image5.jpg",
+          "https://image6.jpg"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Teoman Konseri",
+      "category": "concert",
+      "description": "Teoman'ın unutulmaz şarkılarıyla dolu bir konser. Türk rock müziğinin sevilen ismi sahnede!",
+      "date": "26-01-2024 19:30",
+      "image": "https://i.pinimg.com/564x/c2/1d/73/c21d7386dcca752e930ba477937675da.jpg",
+      "link": "https://www.google.com",
+      "location": "İstanbul, Harbiye Cemil Topuzlu Açıkhava Sahnesi, Türkiye",
+      "map": {
+        "location": [{"latitude": 41.0458, "longitude": 28.9885}]},
+      "stars": 4,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 160, "stock": 80},
+          {"category": "Normal", "price": 80, "stock": 160}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında kamera kullanımı serbesttir.",
+          "ticketPresentation": "Geçerli bir biletinizin olması gerekmektedir.",
+          "doorOpeningTime": "Kapı açılış saati: 18:30"
+        },
+        "photos": [
+          "https://image7.jpg",
+          "https://image8.jpg"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Duman Konseri",
+      "category": "concert",
+      "description": "Duman'ın efsane şarkılarıyla dolu bir konser gecesi. Grunge müziğin öncülerinden biri sahnede!",
+      "date": "28-01-2024 22:15",
+      "image": "https://i.pinimg.com/564x/2e/97/02/2e9702cfdbbab781c767b1f38b0596de.jpg",
+      "link": "https://www.google.com",
+      "location": "İstanbul, KüçükÇiftlik Park, Türkiye",
+      "map": {
+        "location": [{"latitude": 41.0579, "longitude": 29.0402}]},
+      "stars": 3,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 190, "stock": 110},
+          {"category": "Normal", "price": 95, "stock": 210}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında kamera kullanımı serbesttir.",
+          "ticketPresentation": "Elektronik biletinizi göstermek yeterlidir.",
+          "doorOpeningTime": "Kapı açılış saati: 21:15"
+        },
+        "photos": [
+          "https://image9.jpg",
+          "https://image10.jpg"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Sezen Aksu Konseri",
+      "category": "concert",
+      "description": "Sezen Aksu'nun eşsiz sesiyle dolu bir konser. Türk müziğinin kraliçesi sahnede!",
+      "date": "30-01-2024 20:45",
+      "image": "https://i.pinimg.com/564x/cb/f1/3f/cbf13f6055a07230f48de104604c761b.jpg",
+      "link": "https://www.google.com",
+      "location": "İstanbul, İş Sanat Kültür Merkezi, Türkiye",
+      "map": {
+        "location": [{"latitude": 41.0799, "longitude": 29.0319}]},
+      "stars": 5,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 220, "stock": 90},
+          {"category": "Normal", "price": 110, "stock": 180}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında kamera kullanımı serbesttir.",
+          "ticketPresentation": "Biletinizi yanınızda bulundurmanız gerekmektedir.",
+          "doorOpeningTime": "Kapı açılış saati: 20:15"
+        },
+        "photos": [
+          "https://image11.jpg",
+          "https://image12.jpg"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Ajda Pekkan Konseri",
+      "category": "concert",
+      "description": "Ajda Pekkan'ın muhteşem performansıyla dolu bir gece. Pop müziğin kraliçesiyle buluşun!",
+      "date": "01-02-2024 19:00",
+      "image": "https://i.pinimg.com/564x/b9/e7/f1/b9e7f1a2f56904338fe7ba699b78da7a.jpg",
+      "link": "https://www.google.com",
+      "location": "Ankara, Ankara Spor ve Sergi Kompleksi, Türkiye",
+      "map": {
+        "location": [{"latitude": 39.9334, "longitude": 32.8597}]},
+      "stars": 4,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 180, "stock": 120},
+          {"category": "Normal", "price": 90, "stock": 200}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında kamera kullanımı serbesttir.",
+          "ticketPresentation": "Biletinizi etkinlik günü yanınızda bulundurunuz.",
+          "doorOpeningTime": "Kapı açılış saati: 18:30"
+        },
+        "photos": [
+          "https://image13.jpg",
+          "https://image14.jpg"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Tarkan Konseri",
+      "category": "concert",
+      "description": "Tarkan'ın eşsiz şarkıları ve dans performansıyla dolu bir konser deneyimi. Bu muhteşem geceyi kaçırmayın!",
+      "date": "03-02-2024 21:30",
+      "image": "https://i.pinimg.com/564x/fc/29/73/fc2973809422a94d6edfae72e0604cfd.jpg",
+      "link": "https://www.google.com",
+      "location": "İzmir, İzmir Arena, Türkiye",
+      "map": {
+        "location": [ {"latitude": 38.4192, "longitude": 27.1287}]},
+      "stars": 5,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 250, "stock": 80},
+          {"category": "Normal", "price": 120, "stock": 200}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında kamera kullanımı serbesttir.",
+          "ticketPresentation": "Elektronik biletinizi veya barkodunuzu gösteriniz.",
+          "doorOpeningTime": "Kapı açılış saati: 20:30"
+        },
+        "photos": [
+          "https://image15.jpg",
+          "https://image16.jpg"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Yalnız Gece Tiyatrosu",
+      "category": "theatre",
+      "description": "Klasik Shakespeare oyunlarıyla dolu unutulmaz bir tiyatro deneyimi sizi bekliyor. Sanatseverler için imperdible!",
+      "date": "22-03-2024 19:00",
+      "image": "https://images.pexels.com/photos/5135106/pexels-photo-5135106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.shakespearetheater.com",
+      "location": "Londra, The Globe Theatre, Birleşik Krallık",
+      "map": {
+        "location": [{"latitude": 51.5081, "longitude": -0.0976}]},
+      "stars": 5,
+      "detail": {
+        "ticketCategories": [
+          {"category": "Premium", "price": 120, "stock": 150},
+          {"category": "Normal", "price": 80, "stock": 200}
+        ],
+        "rules": {
+          "camera": "Etkinlik boyunca fotoğraf ve video çekimi yapmak yasaktır.",
+          "ticketPresentation": "Etkinlik günü geçerli bir biletinizi göstermek zorunludur.",
+          "doorOpeningTime": "Kapı açılış saati: 18:30"
+        },
+        "photos": [
+          "https://image1.jpg",
+          "https://image2.jpg"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Modern Sanatlar Tiyatrosu",
+      "category": "theatre",
+      "description": "Çağdaş ve deneysel performansların sergilendiği bir tiyatro gecesi. Sanatın sınırlarını keşfedin!",
+      "date": "25-03-2024 20:30",
+      "image": "https://images.pexels.com/photos/109669/pexels-photo-109669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.modernartstheater.com",
+      "location": "New York, Broadway Theatre, ABD",
+      "map": {
+        "location": [{"latitude": 40.7589, "longitude": -73.9845}]
+      },
+      "stars": 3,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 150, "stock": 100},
+          {"category": "Normal", "price": 100, "stock": 150}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında fotoğraf çekimi yapmak serbesttir.",
+          "ticketPresentation": "Elektronik biletinizin veya QR kodunuzun yanınızda olması yeterlidir.",
+          "doorOpeningTime": "Kapı açılış saati: 19:45"
+        },
+        "photos": [
+          "https://image3.jpg",
+          "https://image4.jpg"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Komedi Tiyatrosu",
+      "category": "theatre",
+      "description": "Eğlenceli komedi gösterileri ve stand-up performanslarının yer aldığı bir tiyatro gecesi. Kahkaha garantili!",
+      "date": "28-03-2024 21:15",
+      "image": "https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.comedyplayhouse.com",
+      "location": "Los Angeles, Laugh Factory, ABD",
+      "map": {
+        "location": [{"latitude": 34.1016, "longitude": -118.3415}]
+      },
+      "stars": 3,
+      "detail": {
+        "ticketCategories": [
+          {"category": "Premium", "price": 90, "stock": 120},
+          {"category": "Normal", "price": 60, "stock": 180}
+        ],
+        "rules": {
+          "camera": "Etkinlik sırasında fotoğraf ve video çekmek yasaktır.",
+          "ticketPresentation": "Geçerli bir biletinizin olması gerekmektedir.",
+          "doorOpeningTime": "Kapı açılış saati: 20:45"
+        },
+        "photos": [
+          "https://image5.jpg",
+          "https://image6.jpg"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Drama Sarayı",
+      "category": "theatre",
+      "description": "Yoğun ve etkileyici drama prodüksiyonlarının sergilendiği bir tiyatro gecesi. Duygusal bir yolculuğa hazır olun!",
+      "date": "30-03-2024 18:45",
+      "image": "https://images.pexels.com/photos/6899763/pexels-photo-6899763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.dramapalace.com",
+      "location": "Paris, Théâtre du Châtelet, Fransa",
+      "map": {
+        "location": [{"latitude": 48.8570, "longitude": 2.3469}]},
+      "stars": 2,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 110, "stock": 80},
+          {"category": "Normal", "price": 70, "stock": 120}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında fotoğraf çekimi yapmak yasaktır.",
+          "ticketPresentation": "Biletinizi etkinlik günü yanınızda bulundurunuz.",
+          "doorOpeningTime": "Kapı açılış saati: 18:15"
+        },
+        "photos": [
+          "https://image7.jpg",
+          "https://image8.jpg"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Müzikal Tiyatro Stüdyosu",
+      "category": "theatre",
+      "description": "Muhteşem müzikaller ve Broadway tarzı performansların yer aldığı bir tiyatro gecesi. Sanat dolu anlar yaşayın!",
+      "date": "02-04-2024 19:30",
+      "image": "https://images.pexels.com/photos/9275492/pexels-photo-9275492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.musicaltheaterstudio.com",
+      "location": "Chicago, Chicago Theatre, ABD",
+      "map": {
+        "location": [ {"latitude": 41.8837, "longitude": -87.6278}]},
+      "stars": 4,
+      "detail": {
+        "ticketCategories": [
+          {"category": "Premium", "price": 180, "stock": 100},
+          {"category": "Normal", "price": 120, "stock": 150}
+        ],
+        "rules": {
+          "camera": "Etkinlik sırasında fotoğraf ve video çekmek serbesttir.",
+          "ticketPresentation": "Elektronik biletinizi veya barkodunuzu gösteriniz.",
+          "doorOpeningTime": "Kapı açılış saati: 19:00"
+        },
+        "photos": [
+          "https://image9.jpg",
+          "https://image10.jpg"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Futbol Maçı: Beşiktaş JK vs Trabzon SK",
+      "category": "sport",
+      "description": "İki büyük takım arasında heyecan dolu bir futbol maçı. Bu mücadeleyi kaçırmayın!",
+      "date": "25-02-2024 17:30",
+      "image": "https://images.pexels.com/photos/13208200/pexels-photo-13208200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.google.com",
+      "location": "İstanbul, Vodafone Park, Türkiye",
+      "map": {
+        "location": [{"latitude": 41.0422, "longitude": 28.9844}]},
+      "stars": 4,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 200, "stock": 50},
+          {"category": "Normal", "price": 120, "stock": 100}
+        ],
+        "rules": {
+          "camera": "Etkinlik boyunca fotoğraf çekimi yapmak serbesttir.",
+          "ticketPresentation": "Elektronik biletinizin veya QR kodunuzun yanınızda olması gerekmektedir.",
+          "doorOpeningTime": "Kapı açılış saati: 16:30"
+        },
+        "photos": [
+          "https://image11.jpg",
+          "https://image12.jpg"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Basketbol Maçı: Fenerbahçe Beko vs Galatasaray",
+      "category": "sport",
+      "description": "Rakip takımlar arasında geçecek yoğun bir basketbol maçı. Basketbol tutkunları için imperdible!",
+      "date": "27-02-2024 19:45",
+      "image": "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.google.com",
+      "location": "New York, Madison Square Garden, ABD",
+      "map": {
+        "location2": [{"latitude": 40.7505, "longitude": -73.9934}]},
+      "stars": 3,
+      "detail": {
+        "ticketCategories": [
+          {"category": "Premium", "price": 150, "stock": 80},
+          {"category": "Normal", "price": 90, "stock": 120}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında fotoğraf çekimi yapmak serbesttir.",
+          "ticketPresentation": "Geçerli bir biletinizin olması gerekmektedir.",
+          "doorOpeningTime": "Kapı açılış saati: 18:45"
+        },
+        "photos": [
+          "https://image13.jpg",
+          "https://image14.jpg"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Tenis Şampiyonası",
+      "category": "sport",
+      "description": "Top oyuncuların yer aldığı büyük tenis şampiyonası. Tenis tutkunları için imperdible!",
+      "date": "01-03-2024 14:00",
+      "image": "https://images.pexels.com/photos/5739223/pexels-photo-5739223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.google.com",
+      "location": "Paris, Roland Garros, Fransa",
+      "map": {
+        "location": [{"latitude": 48.8433, "longitude": 2.2489}]},
+      "stars": 5,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 250, "stock": 30},
+          {"category": "Normal", "price": 120, "stock": 80}
+        ],
+        "rules": {
+          "camera": "Etkinlik sırasında fotoğraf ve video çekmek yasaktır.",
+          "ticketPresentation": "Biletinizi etkinlik günü yanınızda bulundurunuz.",
+          "doorOpeningTime": "Kapı açılış saati: 13:15"
+        },
+        "photos": [
+          "https://image15.jpg",
+          "https://image16.jpg"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Golf Turnuvası",
+      "category": "sport",
+      "description": "Resimdeki bir golf sahasında yıllık golf turnuvası. Golf tutkunları için unutulmaz bir gün!",
+      "date": "03-03-2024 08:00",
+      "image": "https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.google.com",
+      "location": "Londra, The Belfry Golf Club, Birleşik Krallık",
+      "map": {
+        "location": [{"latitude": 52.5643, "longitude": -1.7929}]},
+      "stars": 4,
+      "detail": {
+        "ticketCategories": [
+          {"category": "Premium", "price": 180, "stock": 40},
+          {"category": "Normal", "price": 100, "stock": 60}
+        ],
+        "rules": {
+          "camera": "Etkinlik alanında fotoğraf ve video çekimi yapmak yasaktır.",
+          "ticketPresentation": "Elektronik biletinizi veya barkodunuzu gösteriniz.",
+          "doorOpeningTime": "Kapı açılış saati: 07:15"
+        },
+        "photos": [
+          "https://image17.jpg",
+          "https://image18.jpg"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "name": "Maraton: Şehir Koşusu",
+      "category": "sport",
+      " description": "Fitness tutkunları için şehir genelinde düzenlenen bir maraton. Katılmaya hazır mısınız?",
+      "date": "05-03-2024 09:30",
+      "image": "https://images.pexels.com/photos/5687501/pexels-photo-5687501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.google.com",
+      "location": "Berlin, Brandenburg Gate, Almanya",
+      "map": {
+        "location": [{"latitude": 52.5163, "longitude": 13.3777}]},
+      "stars": 5,
+      "detail": {
+        "ticketCategories": [
+          {"category": "VIP", "price": 150, "stock": 50},
+          {"category": "Normal", "price": 80, "stock": 100}
+        ],
+        "rules": {
+          "camera": "Etkinlik sırasında kişisel fotoğraf çekimi yapmak serbesttir.",
+          "ticketPresentation": "Elektronik biletinizi veya QR kodunuzu gösteriniz.",
+          "doorOpeningTime": "Kapı açılış saati: 08:45"
+        },
+        "photos": [
+          "https://image19.jpg",
+          "https://image20.jpg"
+        ]
+      }
+    }
     ]
   }
   

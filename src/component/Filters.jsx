@@ -1,8 +1,18 @@
 import React from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { TextField, Select, MenuItem, Button, Box, Card, CardContent, FormControl, InputLabel } from "@mui/material";
-import tr from 'date-fns/locale/tr';
+import {
+  TextField,
+  Select,
+  MenuItem,
+  Button,
+  Box,
+  Card,
+  CardContent,
+  FormControl,
+  InputLabel,
+} from "@mui/material";
+import tr from "date-fns/locale/tr";
 
 function Filters({
   searchInput,
@@ -20,7 +30,13 @@ function Filters({
   handleClearFilters,
 }) {
   return (
-    <Card style={{ marginBottom: "20px", marginTop: "10px", backgroundColor: "#EEEDEB" }}>
+    <Card
+      style={{
+        marginBottom: "20px",
+        marginTop: "10px",
+        backgroundColor: "#EEEDEB",
+      }}
+    >
       <CardContent>
         <Box display="flex" alignItems="center" gap={1}>
           <FormControl sx={{ flex: 1, marginBottom: "16px" }}>
@@ -35,8 +51,20 @@ function Filters({
             />
           </FormControl>
 
-          <FormControl sx={{ height: "40px", flex: 1, marginRight: "10px", marginBottom: "16px" }}>
-            <InputLabel htmlFor="category-select" sx={{ color: "rgba(0, 0, 0, 0.87)" }}>Category</InputLabel>
+          <FormControl
+            sx={{
+              height: "40px",
+              flex: 1,
+              marginRight: "10px",
+              marginBottom: "16px",
+            }}
+          >
+            <InputLabel
+              htmlFor="category-select"
+              sx={{ color: "rgba(0, 0, 0, 0.87)" }}
+            >
+              Category
+            </InputLabel>
             <br />
             <Select
               id="category-select"
@@ -52,8 +80,20 @@ function Filters({
             </Select>
           </FormControl>
 
-          <FormControl sx={{ height: "40px", flex: 1, marginRight: "10px", marginBottom: "16px" }}>
-            <InputLabel htmlFor="location-select" sx={{ color: "rgba(0, 0, 0, 0.87)" }}>Location</InputLabel>
+          <FormControl
+            sx={{
+              height: "40px",
+              flex: 1,
+              marginRight: "10px",
+              marginBottom: "16px",
+            }}
+          >
+            <InputLabel
+              htmlFor="location-select"
+              sx={{ color: "rgba(0, 0, 0, 0.87)" }}
+            >
+              Location
+            </InputLabel>
             <br />
             <Select
               id="location-select"
@@ -77,7 +117,7 @@ function Filters({
               onChange={handleStartDateChange}
               dateFormat="dd-MM-yyyy"
               placeholderText="Select start date"
-              customInput={<TextField style={{ height: "40px" }} />} 
+              customInput={<TextField style={{ height: "40px" }} />}
               locale={tr}
             />
           </div>
@@ -90,12 +130,17 @@ function Filters({
               onChange={handleEndDateChange}
               dateFormat="dd-MM-yyyy"
               placeholderText="Select end date"
-              customInput={<TextField style={{ height: "40px" }} />} 
+              customInput={<TextField style={{ height: "40px" }} />}
               locale={tr}
             />
           </div>
 
-          <Button onClick={handleClearFilters} variant="#2D3250" color="dark" sx={{ height: "40px", flex: 1, marginBottom: "10px" }}>
+          <Button
+            onClick={handleClearFilters}
+            variant="#2D3250"
+            color="dark"
+            sx={{ height: "40px", flex: 1, marginBottom: "10px" }}
+          >
             Clear Filters
           </Button>
         </Box>

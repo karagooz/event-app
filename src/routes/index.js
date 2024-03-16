@@ -1,4 +1,4 @@
-import HomePage from '../views/public/HomePage/HomePage'
+import HomePages from '../views/public/HomePages'
 import SportPage from '../views/public/SportPage'
 import ConcertsPage from '../views/public/ConcertsPage'
 import TheatrePage from '../views/public/TheatrePage'
@@ -12,7 +12,7 @@ export const publicRoutes = [
     
     {
         path:'/*',
-        element: <HomePage />
+        element: <HomePages />
     },
     {
         path:'/sport/*',

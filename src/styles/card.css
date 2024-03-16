@@ -11,8 +11,11 @@
     border-radius: 4px;
     padding: 16px;
     width: 300px;
+    transition: box-shadow 0.3s ease-in-out;
   }
-  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
+  }
   .card-image {
     width: 100%;
     height: 320px; /* İstenilen yüksekliği belirtin */

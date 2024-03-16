@@ -13,7 +13,9 @@ import MenuItem from "@mui/material/MenuItem";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import { Button } from "@mui/material";
+import { Button, Card, CardContent, Typography } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faClock,faTicketAlt,faCamera,} from "@fortawesome/free-solid-svg-icons";
 
 function DetailPages() {
   const { id } = useParams();
@@ -79,82 +81,93 @@ function DetailPages() {
 
   return (
     <>
-      <h1>{deepData.name}</h1>
-      <hr />
-      <div className="event-photos">
-        <Slider {...settings}>
-          {photos.map((photo, index) => (
-            <div key={index}>
-              <img src={photo} alt={`Event ${index}`} />
-            </div>
-          ))}
-        </Slider>
-      </div>
-      <div
-        className="eventDetail"
-        style={{ display: "inline-block", marginLeft: "150px", width: "500px" }}
-      >
-        <h1>ATTENTION!</h1>
-        <hr />
-        <List>
-          <ListItem>
-            <ListItemText primary={` ${camera}`} />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary={` ${ticketPresentation}`} />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary={`${doorOpeningTime}`} />
-          </ListItem>
-        </List>
-        
-      </div>
-
-      <FormGroup
-        className="form-group"
-        style={{ display: "inline-block", marginLeft: "120px", width: "500px" }}
-      >
-        <h1>Tickets Area</h1>
-        <hr />
-        {ticketCategories.map((category, index) => (
-          <div key={index}>
-            <FormControlLabel
-              control={<Checkbox />}
-              label={`${category.category} - $${category.price}`}
-              onChange={(event) => handleCategoryChange(event, category)}
-            />
-            <Select
-              value={personCounts[category.category] || 0}
-              onChange={(event) =>
-                handlePersonCountChange(event, category.category)
-              }
-            >
-              {[1, 2, 3, 4, 5].map((count) => (
-                <MenuItem key={count} value={count}>
-                  {count} Person
-                </MenuItem>
+      <Card>
+        <CardContent>
+          <Typography variant="h4">{deepData.name}</Typography>
+          <hr />
+          <div className="event-photos">
+            <Slider {...settings}>
+              {photos.map((photo, index) => (
+                <div key={index}>
+                  <img src={photo} alt={`Event ${index}`} />
+                </div>
               ))}
-            </Select>
+            </Slider>
           </div>
-        ))}
-        <hr />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <h2>Total Price: ${totalPrice}</h2>
-          <Button
-            variant="contained"
-            color="success"
-            style={{ padding: "10px", width: "150px" }}
-          >
-            Pay
-          </Button>
-        </div>
-      </FormGroup>
+          <div className="eventDetail">
+            <Typography variant="h6">INFORMATION !</Typography>
+            <hr />
+            <List>
+              <ListItem>
+                <FontAwesomeIcon
+                  icon={faCamera}
+                  style={{ marginRight: "8px" }}
+                />
+                <ListItemText primary={` ${camera}`} />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon
+                  icon={faTicketAlt}
+                  style={{ marginRight: "8px" }}
+                />
+                <ListItemText primary={` ${ticketPresentation}`} />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon
+                  icon={faClock}
+                  style={{ marginRight: "8px" }}
+                />
+                <ListItemText primary={`${doorOpeningTime}`} />
+              </ListItem>
+            </List>
+
+            <hr />
+          </div>
+
+          <FormGroup className="form-group">
+            <Typography variant="h6">Tickets Area</Typography>
+            <hr />
+            {ticketCategories.map((category, index) => (
+              <div key={index}>
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label={`${category.category} - $${category.price}`}
+                  onChange={(event) => handleCategoryChange(event, category)}
+                />
+                <Select
+                  value={personCounts[category.category] || 0}
+                  onChange={(event) =>
+                    handlePersonCountChange(event, category.category)
+                  }
+                >
+                  {[1, 2, 3, 4, 5].map((count) => (
+                    <MenuItem key={count} value={count}>
+                      {count} Person
+                    </MenuItem>
+                  ))}
+                </Select>
+              </div>
+            ))}
+            <hr />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Typography variant="h6">Total Price: ${totalPrice}</Typography>
+              <Button
+                variant="contained"
+                color="success"
+                style={{ padding: "10px", width: "150px" }}
+              >
+                Pay
+              </Button>
+            </div>
+          </FormGroup>
+        </CardContent>
+      </Card>
     </>
   );
 }

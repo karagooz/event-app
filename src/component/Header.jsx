@@ -33,7 +33,7 @@ function Header({ handleClearFilters }) {
         <Toolbar>
           <StyledBox sx={{ flexGrow: 1, position: 'relative' }}>
             <RotatedTypography variant="h5">
-              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleEventhallClick}>
+              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} >
                 <StyledBox>
                   <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginRight: '5px' }} />
                   <br />
